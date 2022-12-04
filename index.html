@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VanillaJS Chrome App</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- 배경이미지 -->
+    <div class="bgImg">
+        <!-- 실시간 시계 -->
+        <h2 id="clock"></h2>
+        <!-- 로그인 -->
+        <form action="" id="login-form" class="hidden">
+            <input type="text" placeholder="이름을 입력하세요." required maxlength="15">
+            <button>로그인</button>
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
+        <!-- 투두리스트 -->
+        <form action="" id="todo-form">
+            <input type="text" placeholder="할 일을 입력하세요." required>
+        </form>
+        <ul id="todo-list"></ul>
+        <!-- 현위치와 날씨 -->
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <script src="./js/clock.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/background.js"></script>
+    <script src="./js/weather.js"></script>
+</body>
+</html>
